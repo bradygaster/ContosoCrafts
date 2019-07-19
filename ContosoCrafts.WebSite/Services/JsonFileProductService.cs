@@ -21,7 +21,11 @@ namespace ContosoCrafts.WebSite.Services
 
             using(var jsonFileReader = File.OpenText(jsonFileName))
             {
-                return JsonSerializer.Deserialize<Product[]>(jsonFileReader.ReadToEnd());
+                return JsonSerializer.Deserialize<Product[]>(jsonFileReader.ReadToEnd(),
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
             }
 
             throw new System.InvalidOperationException("No products found.");
