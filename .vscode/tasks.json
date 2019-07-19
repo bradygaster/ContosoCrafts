@@ -7,22 +7,6 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/ContosoCrafts.sln",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "publish website (self-contained linux)",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "publish",
-                "--self-contained",
-                "true",
-                "-r",
-                "linux-x64",
                 "${workspaceFolder}/ContosoCrafts.WebSite/ContosoCrafts.WebSite.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
@@ -30,7 +14,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "publish website",
+            "label": "publish",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -42,7 +26,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "watch website",
+            "label": "watch",
             "command": "dotnet",
             "type": "process",
             "args": [
