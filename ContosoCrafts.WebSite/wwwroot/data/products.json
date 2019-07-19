@@ -1,0 +1,122 @@
+[
+    {
+        "id" : "jenlooper-cactus",
+        "maker" : "@jenlooper",
+        "img" : "jenlooper-cactus.jpeg",
+        "url" : "https://www.hackster.io/agent-hawking-1/the-quantified-cactus-an-easy-plant-soil-moisture-sensor-e65393",
+        "title" : "The Quantified Cactus: An Easy Plant Soil Moisture Sensor",
+        "description" : "This project is a good learning project to get comfortable with soldering and programming an Arduino."
+    },
+    {
+        "id" : "jenlooper-light",
+        "maker" : "jenlooper",
+        "img" : "jenlooper-light.jpeg",
+        "url" : "https://www.hackster.io/agent-hawking-1/book-light-dee7e4",
+        "title" : "A beautiful switch-on book light",
+        "description" : "Use craft items you have around the house, plus two LEDs and a LilyPad battery holder, to create a useful book light for reading in the dark."
+    },
+    {
+        "id" : "jenlooper-lightshow",
+        "maker" : "@jenlooper",
+        "img" : "jenlooper-lightshow.png",
+        "url" : "https://www.hackster.io/agent-hawking-1/bling-your-laptop-with-an-internet-connected-light-show-30e4db",
+        "title" : "Bling your Laptop with an Internet-Connected Light Show",
+        "description" : "Create a web-connected light-strip API controllable from your website, using the Particle.io."
+    },
+    {
+        "id" : "jenlooper-survival",
+        "maker" : "jenlooper",
+        "img" : "jenlooper-survival.jpeg",
+        "url" : "https://www.hackster.io/agent-hawking-1/create-a-compact-survival-kit-38bfdb",
+        "title" : "Create a Compact Survival Kit with LED Track Lighting",
+        "description" : "Use an Altoids tin with Chibitronics sticker LEDs to create a light-up compact that doubles as a survival kit for the young hipster"
+    },
+    {
+        "id" : "sailorhg-bubblesortpic",
+        "maker" : "sailorhg",
+        "img" : "sailorhg-bubblesortpic.png",
+        "url" : "https://twitter.com/sailorhg/status/1090107740049952770",
+        "title" : "Bubblesort Visualization",
+        "description" : "Visualization of sailor scouts sorted by bubblesort algorithm by their planet's distance from the sun"
+    },
+    {
+        "id" : "sailorhg-corsage",
+        "maker" : "sailorhg",
+        "img" : "sailorhg-corsage.png",
+        "url" : "https://twitter.com/sailorhg/status/1090113666911891456",
+        "title" : "Light-up Corsage",
+        "description" : "Light-up corsage I made with my summer intern."
+    },
+    {
+        "id" : "sailorhg-kit",
+        "maker" : "sailorhg",
+        "img" : "sailorhg-kit.png",
+        "url" : "https://twitter.com/sailorhg/status/1090122822007963648",
+        "title" : "Pastel hardware kit",
+        "description" : "Pastel hardware kits complete with custom manufactured pastel alligator clips."
+    },
+    {
+        "id" : "sailorhg-led",
+        "maker" : "sailorhg",
+        "img" : "sailorhg-led.jpg",
+        "url" : "https://twitter.com/sailorhg/status/1090117277540745216",
+        "title" : "Heart-shaped LED",
+        "description" : "custom molded heart shaped LED with sprinkles."
+    },
+    {
+        "id" : "selinazawacki-soi-shirt",
+        "maker" : "selinazawacki",
+        "img" : "selinazawacki-soi-shirt.png",
+        "url" : "https://www.instagram.com/p/BNvESj-j8PI/",
+        "title" : "Black Sweatshirt",
+        "description" : "Black sweatshirt hoody with the Sick of the Internet logo."
+    },
+    {
+        "id" : "selinazawacki-soi-pins",
+        "maker" : "selinazawacki",
+        "img" : "selinazawacki-soi-pins.png",
+        "url" : "https://www.instagram.com/p/BNm6hZzDoEF/",
+        "title" : "Sick of the Internet Pins",
+        "description" : "Still some time to enter the pin/sticker giveaway! Plus take 15% off any order with code INTERNET through tomorrow at www.LunarDescent.com"
+    },
+    {
+        "id" : "vogueandcode-hipster-dev-bro",
+        "maker" : "vogueandcode",
+        "img" : "vogueandcode-hipster-dev-bro.png",
+        "url" : "https://www.vogueandcode.com/shop/hipster-dev-bro",
+        "title" : "Hipster Dev Bro",
+        "description" : "Hipster Dev Bro is busy coding away while styled in a camo jacket and orange beanie."
+    },
+    {
+        "id" : "vogueandcode-pretty-girls-code-tee",
+        "maker" : "vogueandcode",
+        "img" : "vogueandcode-pretty-girls-code-tee",
+        "url" : "https://www.vogueandcode.com/shop/pretty-girls-code-tee",
+        "title" : "Pretty Girls Code Tee",
+        "description" : "Need I say more? Everyone’s favorite design is finally here on a tee! The Pretty Girls Code crew-neck tee is available in a soft pink with red writing. The material is a nice heavy cotton which makes this tee extra comfy to wear!"
+    },
+    {
+        "id" : "vogueandcode-ruby-sis-2",
+        "maker" : "vogueandcode",
+        "img" : "vogueandcode-ruby-sis-2ruby-sis-2",
+        "url" : "https://www.vogueandcode.com/shop/ruby-sis-2",
+        "title" : "Ruby Sis",
+        "description" : "Styled in a dashiki, Ruby Sis is listening to music while coding in her favorite language, Ruby!"
+    },
+    {
+        "id" : "selinazawacki-moon",
+        "maker" : "selinazawacki",
+        "img" : "selinazawacki-moon",
+        "url" : "https://www.instagram.com/p/BFktVYPinKQ/",
+        "title" : "Holographic Dark Moon Necklace",
+        "description" : "Not sure if I'll be making more, but you can still check out a ton of other cool items at www.LunarDescent.com"
+    },
+    {
+        "id" : "selinazawacki-shirt",
+        "maker" : "selinazawacki",
+        "img" : "selinazawacki-shirt",
+        "url" : "https://www.instagram.com/p/BEXlpiZCnJ3/",
+        "title" : "Floppy Crop",
+        "description" : "Used up the Diskette fabric today to make 2 of these crops - only 1 Small and 1 Medium available at www.LunarDescent.com"
+    }
+]
