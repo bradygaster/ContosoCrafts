@@ -4,14 +4,16 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Contoso Crafts</h1>
-    <p>Buy, sell, and get inspired by crafts celebrating geek life.</p>
+<div class="card-columns">
+@foreach (var product in Model.Products)
+{
+    <div class="card">
+        <div class="card-img" style="background-image: url('@product.Image');">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@product.Title</h5>
+            <p class="card-text">@product.Description</p>
+        </div>
+    </div>
+}
 </div>
-
-<ul>
-    @foreach (var product in Model.Products)
-    {
-        <li>@product.Title</li>    
-    }
-</ul>
