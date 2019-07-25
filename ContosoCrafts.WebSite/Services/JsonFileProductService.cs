@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCrafts.WebSite.Services
 {
-    public class JsonFileProductService : IProductService
+   public class JsonFileProductService : IProductService
     {
         public JsonFileProductService(IWebHostEnvironment webHostEnvironment)
         {
@@ -31,4 +32,5 @@ namespace ContosoCrafts.WebSite.Services
             throw new System.InvalidOperationException("No products found.");
         }
     }
+
 }
