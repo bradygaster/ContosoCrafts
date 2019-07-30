@@ -2,10 +2,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using ContosoCrafts.WebSite.Models;
+using ContosoCrafts.ProductApi.Models;
 using Microsoft.AspNetCore.Hosting;
 
-namespace ContosoCrafts.WebSite.Services
+namespace ContosoCrafts.ProductApi.Services
 {
    public class JsonFileProductService : IProductService
     {

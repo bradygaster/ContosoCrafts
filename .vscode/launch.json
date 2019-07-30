@@ -3,9 +3,35 @@
    // Use hover for the description of the existing attributes
    // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
    "version": "0.2.0",
+   "compounds": [
+       {
+           "name": "Run All",
+           "configurations": [
+               "Launch Api", 
+               "Launch WebSite"
+           ]
+       }
+   ],
    "configurations": [
         {
-            "name": ".NET Core Launch (web)",
+            "name": "Launch Api",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/ContosoCrafts.ProductApi/bin/Debug/netcoreapp3.0/ContosoCrafts.ProductApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/ContosoCrafts.ProductApi",
+            "stopAtEntry": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Launch WebSite",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
