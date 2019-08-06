@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using ContosoCrafts.WebSite.Models;
@@ -16,11 +17,14 @@ namespace ContosoCrafts.WebSite.Services
 
         public IWebHostEnvironment WebHostEnvironment { get; }
 
+        private string JsonFileName
+        {
+            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
+        }
+
         public IEnumerable<Product> GetProducts()
         {
-            var jsonFileName = Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json");
-
-            using(var jsonFileReader = File.OpenText(jsonFileName))
+            using(var jsonFileReader = File.OpenText(JsonFileName))
             {
                 return JsonSerializer.Deserialize<Product[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
@@ -28,8 +32,33 @@ namespace ContosoCrafts.WebSite.Services
                         PropertyNameCaseInsensitive = true
                     });
             }
+        }
 
-            throw new System.InvalidOperationException("No products found.");
+        public void AddRating(string productId, int rating)
+        {
+            var products = GetProducts();
+
+            if(products.Any(x => x.Id == productId) &&
+               products.First(x => x.Id == productId).Ratings == null)
+            {
+                products.First(x => x.Id == productId).Ratings = new int[] { rating };
+            }
+            
+            var ratings = products.First(x => x.Id == productId).Ratings.ToList();
+                ratings.Add(rating);
+                products.First(x => x.Id == productId).Ratings = ratings.ToArray();
+
+            using(var outputStream = File.OpenWrite(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<Product>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }), 
+                    products
+                );
+            }
         }
     }
 
