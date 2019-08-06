@@ -57,12 +57,12 @@ namespace ContosoCrafts.WebSite
             {
                 endpoints.MapRazorPages();
 
-                endpoints.MapGet("/products", (context) => 
-                {
-                    var products = app.ApplicationServices.GetService<IProductService>().GetProducts();
-                    var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
-                    return context.Response.WriteAsync(json);
-                });
+                // endpoints.MapGet("/products", (context) => 
+                // {
+                //     var products = app.ApplicationServices.GetService<IProductService>().GetProducts();
+                //     var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
+                //     return context.Response.WriteAsync(json);
+                // });
             });
         }
     }
