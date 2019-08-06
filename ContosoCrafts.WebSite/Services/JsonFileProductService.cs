@@ -2,13 +2,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCrafts.WebSite.Services
 {
-   public class JsonFileProductService : IProductService
+   public class JsonFileProductService
     {
         public JsonFileProductService(IWebHostEnvironment webHostEnvironment)
         {
@@ -38,8 +37,7 @@ namespace ContosoCrafts.WebSite.Services
         {
             var products = GetProducts();
 
-            if(products.Any(x => x.Id == productId) &&
-               products.First(x => x.Id == productId).Ratings == null)
+            if(products.First(x => x.Id == productId).Ratings == null)
             {
                 products.First(x => x.Id == productId).Ratings = new int[] { rating };
             }

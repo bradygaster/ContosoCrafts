@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -10,12 +9,12 @@ namespace ContosoCrafts.WebSite.Controllers
     [Route("[controller]")]
     public class ProductsController : ControllerBase
     {
-        public ProductsController(IProductService productService)
+        public ProductsController(JsonFileProductService productService)
         {
             ProductService = productService;
         }
 
-        public IProductService ProductService { get; }
+        public JsonFileProductService ProductService { get; }
 
         [HttpGet]
         public IEnumerable<Product> Get()
