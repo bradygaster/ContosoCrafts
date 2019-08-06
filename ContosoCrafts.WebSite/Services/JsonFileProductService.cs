@@ -45,8 +45,8 @@ namespace ContosoCrafts.WebSite.Services
             }
             
             var ratings = products.First(x => x.Id == productId).Ratings.ToList();
-                ratings.Add(rating);
-                products.First(x => x.Id == productId).Ratings = ratings.ToArray();
+            ratings.Add(rating);
+            products.First(x => x.Id == productId).Ratings = ratings.ToArray();
 
             using(var outputStream = File.OpenWrite(JsonFileName))
             {
