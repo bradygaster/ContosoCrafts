@@ -6,6 +6,6 @@ namespace ContosoCrafts.WebSite.Services
 {
     public interface IProductService
     {
-        Task<IEnumerable<Product>> GetProducts();
+        IEnumerable<Product> GetProducts();
     }
 }

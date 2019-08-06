@@ -24,9 +24,9 @@ namespace ContosoCrafts.WebSite.Pages
         public IProductService ProductService { get; }
         public IEnumerable<Product> Products { get; private set; }
 
-        public async Task OnGet()
+        public void OnGet()
         {
-            Products = await ProductService.GetProducts();
+            Products = ProductService.GetProducts();
         }
     }
 }
