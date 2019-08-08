@@ -1,16 +1,24 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿.checked {
+  color: orange;
+}
+
+.fa-star {
+  cursor: pointer;
+}
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-.card:hover .card-img {
+.card-columns .card:hover .card-img {
   opacity: 1;
 }
 
-.card-body {
-    height: 200px;
+.card-columns .card-body {
+    height: 100px;
     font-family: 'Nunito', sans-serif;
     background: #fbfafd;
 }
 
-.card-img {
+.card-columns .card-img {
   height: 330px;
   vertical-align: bottom;
   background-position: center; /* Center the image */
@@ -18,7 +26,16 @@ for details on configuring this project to bundle and minify static web assets. 
   background-size: cover; /* Resize the background image to cover the entire container */
   opacity: .8;
 }
-.card:hover {
+
+.modal .card-img {
+  height: 500px;
+  vertical-align: bottom;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-columns .card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
 }
