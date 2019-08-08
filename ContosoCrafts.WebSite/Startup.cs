@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
+using ContosoCrafts.WebSite.Components;
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Builder;
@@ -28,6 +29,7 @@ namespace ContosoCrafts.WebSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddServerSideBlazor();
             services.AddHttpClient();
             services.AddControllers();
             services.AddTransient<JsonFileProductService>();
@@ -58,6 +60,7 @@ namespace ContosoCrafts.WebSite
             {
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
+                endpoints.MapBlazorHub<ProductList>("productList");
 
                 // endpoints.MapGet("/products", (context) => 
                 // {
