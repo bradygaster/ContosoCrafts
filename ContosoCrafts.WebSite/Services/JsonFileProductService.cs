@@ -41,10 +41,12 @@ namespace ContosoCrafts.WebSite.Services
             {
                 products.First(x => x.Id == productId).Ratings = new int[] { rating };
             }
-            
-            var ratings = products.First(x => x.Id == productId).Ratings.ToList();
-            ratings.Add(rating);
-            products.First(x => x.Id == productId).Ratings = ratings.ToArray();
+            else
+            {
+                var ratings = products.First(x => x.Id == productId).Ratings.ToList();
+                ratings.Add(rating);
+                products.First(x => x.Id == productId).Ratings = ratings.ToArray();
+            }
 
             using(var outputStream = File.OpenWrite(JsonFileName))
             {
