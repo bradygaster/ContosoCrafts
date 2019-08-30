@@ -1,29 +1,29 @@
 [
   {
-    "Id": "jenlooper-cactus",
-    "Maker": "@jenlooper",
-    "img": "https:\u002f\u002fuser-images.githubusercontent.com\u002f41929050\u002f61567048-13938600-aa33-11e9-9cfd-712191013192.jpeg",
-    "Url": "https:\u002f\u002fwww.hackster.io\u002fagent-hawking-1\u002fthe-quantified-cactus-an-easy-plant-soil-moisture-sensor-e65393",
-    "Title": "The Quantified Cactus: An Easy Plant Soil Moisture Sensor",
-    "Description": "This project is a good learning project to get comfortable with soldering and programming an Arduino.",
+    "Id": "esteejanssens-journal",
+    "Maker": "@esteejanssens",
+    "img": "https://images.unsplash.com/photo-1535837487710-a191373a20ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
+    "Url": "https://unsplash.com/photos/MUf7Ly04sOI",
+    "Title": "Make your own journal",
+    "Description": "Learn to make your own journal from scratch with Estée.",
     "Ratings": null
   },
   {
-    "Id": "jenlooper-light",
-    "Maker": "jenlooper",
-    "img": "https:\u002f\u002fuser-images.githubusercontent.com\u002f41929050\u002f61567049-13938600-aa33-11e9-9c69-a4184bf8e524.jpeg",
-    "Url": "https:\u002f\u002fwww.hackster.io\u002fagent-hawking-1\u002fbook-light-dee7e4",
-    "Title": "A beautiful switch-on book light",
-    "Description": "Use craft items you have around the house, plus two LEDs and a LilyPad battery holder, to create a useful book light for reading in the dark.",
+    "Id": "phildesforges-calligraphy",
+    "Maker": "@phildesforges",
+    "img": "https://images.unsplash.com/photo-1542294670-01c195975f69?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+    "Url": "https://unsplash.com/photos/fMRijNMXnAU",
+    "Title": "Calligraphy for beginners",
+    "Description": "Start learning the basics of Calligraphy with Phil. You'll learn basic letter shapes and strokes, letter spacing, and drills.",
     "Ratings": null
   },
   {
-    "Id": "jenlooper-lightshow",
-    "Maker": "@jenlooper",
-    "img": "https:\u002f\u002fuser-images.githubusercontent.com\u002f41929050\u002f61567053-13938600-aa33-11e9-9780-104fe4019659.png",
-    "Url": "https:\u002f\u002fwww.hackster.io\u002fagent-hawking-1\u002fbling-your-laptop-with-an-internet-connected-light-show-30e4db",
-    "Title": "Bling your Laptop with an Internet-Connected Light Show",
-    "Description": "Create a web-connected light-strip API controllable from your website, using the Particle.io.",
+    "Id": "sheri_silver-handmadesoap",
+    "Maker": "@sheri_silver",
+    "img": "https://images.unsplash.com/photo-1551978245-67f1c131ac55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1550&q=80",
+    "Url": "https://unsplash.com/photos/C84OOkvntZI",
+    "Title": "Handmade soap",
+    "Description": "Looking for the perefect gift? Try handmade soap!",
     "Ratings": null
   },
   {

@@ -1,5 +1,5 @@
 ﻿.checked {
-  color: orange;
+  color: #4D805D;
 }
 
 .fa-star {
@@ -60,13 +60,13 @@ a {
 
 .btn-primary {
     color: #fff;
-    background-color: #252152;
-    border-color: #252152;
+    background-color: #4D805D;
+    border-color: #4D805D;
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #e9a8a6;
-    border-color: #e9a8a6;
+    background-color: #2C4936;
+    border-color: #2C4936;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -118,9 +118,14 @@ p {
 }
 h1 {
     font-family: 'Nunito', sans-serif;
+    color: #4D805D;
 }
 ul {
     font-family: 'Nunito', sans-serif;
+}
+
+.container .footer{
+  color: #fff;
 }
 .footer {
     position: absolute;
