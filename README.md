@@ -1,1 +1,1 @@
-# Contoso Crafts
+# ContosoCrafts
